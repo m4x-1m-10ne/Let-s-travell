@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's travell</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="scroll-down-btn" id="scrollDownBtn" title="Прокрутить вниз">
+        <i class="fas fa-arrow-down"></i>
+    </button>
+
+    <div class="monetization-banner" id="premiumBanner">
+        <button class="close-btn" id="closeBanner">&times;</button>
+        <h3><i class="fas fa-gem"></i>Эксклюзив</h3>
+        <p>Подпишитесь на рассылку, чтобы:</p>
+        <ul>
+            <li>Первыми узнавать о новых турах</li>
+            <li>Получать специальные предложения</li>
+        </ul>
+        <a href="#footer" class="btn btn-dark-custom">Подписаться</a>
+    </div>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Let's travell" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Туры</a>
+                    </li>
+                    <li class="nav-item contact-btn-container">
+                        <a class="nav-link contact-btn" href="#footer">
+                            <span class="contact-text">Наши контакты</span>
+                            <i class="fas fa-phone-alt fa-flip-horizontal contact-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+        <div class="hero-section text-center">
+            <div class="container">
+                <h3 class="display-3 fw-bold mb-4">Эксклюзивные путешествия</h3>
+                <p class="lead mb-5">Откройте для себя мир с нами - уникальные маршруты и неповторимые впечатления</p>
+                <a href="#tours" class="btn btn-dark-custom btn-lg px-5"><i class="fas fa-search"></i> Найти тур</a>
+            </div>
+        </div>
+        
+        <section id="about">
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6" style="padding-top: 50px;">
+                        <h2 class="mb-4">О компании</h2>
+                        <p>Наша специализация направлена на организации уникальных путешествий и приключений по всему миру и предлагаем широкий спектр услуг, включая групповые поездки, экскурсии и активный отдых.</p>
+                        <p>Также ценим каждое путешествие и стремимся сделать его комфортным и запоминающимся. Мы гарантируем:</p>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item bg-light"><i class="fas fa-check text-success mr-2"></i> Высокое качество обслуживания</li>
+                            <li class="list-group-item bg-light"><i class="fas fa-check text-success mr-2"></i> Конкурентоспособные цены</li>
+                            <li class="list-group-item bg-light"><i class="fas fa-check text-success mr-2"></i> Индивидуальный подход к каждому клиенту</li>
+                        </ul>
+                        <p>Команда тщательно разрабатывает маршруты, чтобы каждый клиент смог насладиться неповторимыми моментами.</p>
+                        <p>Путешествуйте с нами и откройте для себя мир!</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-hover-wrapper" style="margin-top: 50px;">
+                            <img src="img/about.jpg" alt="Наша компания" class="img-fluid rounded shadow-lg">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <section id="tours">
+            <div class="container mb-5" style="padding-top: 50px;">
+                <div class="row mb-4">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h2 class="fw-bold">Популярные направления</h2>
+                        <p class="text-muted">Самые востребованные туры этого сезона</p>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 tour-item">
+                        <a href="tours.html#kamchatka-tour" class="card-link">
+                            <div class="card tour-card">
+                                <div class="tour-img-wrapper">
+                                    <img src="img/tour1.jpg" class="card-img-top tour-img" alt="Камчатка">
+                                    <div class="tour-top-info">
+                                        <small class="tour-date"><i class="fas fa-calendar-alt"></i> 10.07-20.07.2026</small>
+                                        <span class="price-tag">от 24 900 ₽</span>
+                                    </div>
+                                    <div class="tour-rating-container">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="tour-rating-value">5.0</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Камчатка - край вулканов</h5>
+                                    <p class="card-text">Тур с посещением вулканов и Долины гейзеров. Включены трансферы.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 tour-item">
+                        <a href="tours.html#baikal-tour" class="card-link">
+                            <div class="card tour-card">
+                                <div class="tour-img-wrapper">
+                                    <img src="img/tour3.jpg" class="card-img-top tour-img" alt="Байкал">
+                                    <div class="tour-top-info">
+                                        <small class="tour-date"><i class="fas fa-calendar-alt"></i> 01.09-10.09.2026</small>
+                                        <span class="price-tag">от 18 900 ₽</span>
+                                    </div>
+                                    <div class="tour-rating-container">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="tour-rating-value">4.5</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Байкал - жемчужина Сибири</h5>
+                                    <p class="card-text">Тур с круизом по озеру и экскурсией на КБЖД. Проживание включено.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <a href="tours.html" class="btn btn-outline-dark btn-lg px-5">Все туры →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section class="flip-cards-section py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold mb-3">Полезные советы</h2>
+                    <p class="text-muted">Наведите курсор на карточку, чтобы увидеть рекомендации</p>
+                </div>
+            </div>
+            
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="card-icon">
+                                    <i class="fas fa-wallet"></i>
+                                </div>
+                                <h4>Экономия</h4>
+                                <p>Бюджетные путешествия</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <ul class="tips-list">
+                                    <li><i class="fas fa-check-circle"></i> Путешествуйте в низкий сезон</li>
+                                    <li><i class="fas fa-check-circle"></i> Бронируйте жильё с кухней</li>
+                                    <li><i class="fas fa-check-circle"></i> Используйте локальный транспорт</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="card-icon">
+                                    <i class="fas fa-suitcase"></i>
+                                </div>
+                                <h4>Упаковка</h4>
+                                <p>Собираем чемодан</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <ul class="tips-list">
+                                    <li><i class="fas fa-check-circle"></i> Составьте чек-лист заранее</li>
+                                    <li><i class="fas fa-check-circle"></i> Возьмите универсальную одежду</li>
+                                    <li><i class="fas fa-check-circle"></i> Не забудьте аптечку</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="card-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>Безопасность</h4>
+                                <p>Важные моменты</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <ul class="tips-list">
+                                    <li><i class="fas fa-check-circle"></i> Сделайте копии документов</li>
+                                    <li><i class="fas fa-check-circle"></i> Изучите местные обычаи</li>
+                                    <li><i class="fas fa-check-circle"></i> Не носите все деньги с собой</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row footer-cols">
+            <div class="col-lg col-md-4 mb-4 footer-col-1">
+                <img src="img/logo.png" alt="Let's travell" height="35" class="mb-3">
+                <p class="small footer-about-text">Путешествуем с 2025 года.<br>Более 500 довольных клиентов.</p>
+                <h6 class="h6 mb-3">Ищите нас на этих платформах</h6>
+                <div class="social-icons">
+                    <a href="https://vk.com/id436072015" alt="VK" class="text-white me-2"><i class="fab fa-vk"></i></a>
+                    <a href="@de_a_d_max" alt="Telegram" class="text-white me-2"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg col-md-4 mb-4 footer-col-2">
+                <h5 class="h6 mb-3">Основное</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#about" class="text-white small">О нашей компании</a></li>
+                    <li class="mb-2"><a href="tours.html" class="text-white small">Туры по России</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg col-md-6 mb-4 footer-col-4">
+                <h5 class="h6 mb-3">Контакты</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2 small contact-item" data-clipboard-text="+79005027437">
+                        <i class="fas fa-phone me-2"></i> +7 (900) 502-74-37
+                        <span class="copy-tooltip">Скопировано!</span>
+                    </li>
+                    <li class="mb-2 small contact-item" data-clipboard-text="p4savehenko@yandex.ru">
+                        <i class="fas fa-envelope me-2"></i> p4savchenko@yandex.ru
+                        <span class="copy-tooltip">Скопировано!</span>
+                    </li>
+                    <li class="mb-2 small">
+                        <a href="https://yandex.ru/maps/-/CDqRrJQh" target="_blank" class="text-white location-link">
+                            <i class="fas fa-map-marker-alt me-2"></i>г. Санкт-Петербург, Невский проспект, д. 55
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg col-md-6 mb-4 footer-col-5">
+                <p class="text-white-50 small">Получайте предложения на почту</p>
+                <form id="subscribeForm" class="mb-2">
+                    <div class="input-group input-group-sm">
+                        <input type="email" class="form-control form-control-sm" placeholder="Ваш email">
+                        <button class="btn btn-dark-custom" type="submit">
+                            <i class="fas fa-paper-plane" style="height: 18px; margin-top: 3px;"></i>
+                        </button>
+                    </div>
+                </form>
+                <small class="text-white-50">Подписываясь, вы соглашаетесь с 
+                    <a href="privacy&terms.html" class="text-white">политикой конфиденциальности</a>
+                </small>
+            </div>
+        </div>
+
+        <hr class="bg-light my-2">
+
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <p class="mb-0 small">&copy; 2025 Let's travell. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="privacy&terms.html#privacy-policy-section" class="text-white me-3 small">Политика конфиденциальности</a>
+                    <a href="privacy&terms.html#terms-section" class="text-white small">Условия использования</a>
+                </div>
+            </div>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
